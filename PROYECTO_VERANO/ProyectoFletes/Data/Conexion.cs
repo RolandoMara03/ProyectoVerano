@@ -11,13 +11,13 @@ namespace ProyectoFletes.Data
 {
     public class Conexion
     {
-        public SqlConnection connect = new SqlConnection();
+        public  SqlConnection connect = new SqlConnection();
         public Conexion(String user, String pass)
         {
             try
             {
 
-                connect = new SqlConnection(@"Data Source=DESKTOP-JNDQ2L1\SQLEXPRESS;Initial Catalog=RyW;UID=" + "sa" + ";PWD=" + "1234");
+                connect = new SqlConnection(@"Data Source=DESKTOP-JNDQ2L1\SQLEXPRESS;Initial Catalog=RyW;UID=" + user + ";PWD=" + pass);
                 connect.Open();
             }
             catch (Exception)

@@ -183,6 +183,7 @@ namespace ProyectoFletes.Views
             this.btnCrear.TabIndex = 10;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // frmCrearProducto
             // 

@@ -30,6 +30,7 @@ namespace ProyectoFletes.Views
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnCamiones = new System.Windows.Forms.Button();
             this.btnDestinos = new System.Windows.Forms.Button();
@@ -39,15 +40,20 @@ namespace ProyectoFletes.Views
             this.pnlSubMenuPiloto = new System.Windows.Forms.Panel();
             this.btnVerPilotos = new System.Windows.Forms.Button();
             this.btnCrearPi = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnProductos = new System.Windows.Forms.Button();
+            this.pnlProductos = new System.Windows.Forms.Panel();
+            this.btnVerProducto = new System.Windows.Forms.Button();
+            this.btnCrearProducto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSubMenuPiloto.SuspendLayout();
+            this.pnlProductos.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.panel1.Controls.Add(this.btnProductos);
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnUsuarios);
             this.panel1.Controls.Add(this.btnCamiones);
@@ -61,13 +67,27 @@ namespace ProyectoFletes.Views
             this.panel1.Size = new System.Drawing.Size(216, 540);
             this.panel1.TabIndex = 0;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(12, 488);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(179, 40);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // btnUsuarios
             // 
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.Location = new System.Drawing.Point(12, 382);
+            this.btnUsuarios.Location = new System.Drawing.Point(12, 362);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(179, 40);
             this.btnUsuarios.TabIndex = 5;
@@ -178,19 +198,59 @@ namespace ProyectoFletes.Views
             this.btnCrearPi.UseVisualStyleBackColor = false;
             this.btnCrearPi.Click += new System.EventHandler(this.btnCrearPi_Click);
             // 
-            // btnSalir
+            // btnProductos
             // 
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(12, 428);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(179, 40);
-            this.btnSalir.TabIndex = 6;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.Location = new System.Drawing.Point(12, 420);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(179, 40);
+            this.btnProductos.TabIndex = 7;
+            this.btnProductos.Text = "Productos";
+            this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            // 
+            // pnlProductos
+            // 
+            this.pnlProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.pnlProductos.Controls.Add(this.btnVerProducto);
+            this.pnlProductos.Controls.Add(this.btnCrearProducto);
+            this.pnlProductos.Location = new System.Drawing.Point(214, 420);
+            this.pnlProductos.Name = "pnlProductos";
+            this.pnlProductos.Size = new System.Drawing.Size(182, 55);
+            this.pnlProductos.TabIndex = 8;
+            this.pnlProductos.Visible = false;
+            // 
+            // btnVerProducto
+            // 
+            this.btnVerProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnVerProducto.FlatAppearance.BorderSize = 0;
+            this.btnVerProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnVerProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerProducto.Location = new System.Drawing.Point(0, 25);
+            this.btnVerProducto.Name = "btnVerProducto";
+            this.btnVerProducto.Size = new System.Drawing.Size(179, 30);
+            this.btnVerProducto.TabIndex = 7;
+            this.btnVerProducto.Text = "Ver";
+            this.btnVerProducto.UseVisualStyleBackColor = false;
+            // 
+            // btnCrearProducto
+            // 
+            this.btnCrearProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnCrearProducto.FlatAppearance.BorderSize = 0;
+            this.btnCrearProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCrearProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearProducto.Location = new System.Drawing.Point(0, 0);
+            this.btnCrearProducto.Name = "btnCrearProducto";
+            this.btnCrearProducto.Size = new System.Drawing.Size(179, 30);
+            this.btnCrearProducto.TabIndex = 6;
+            this.btnCrearProducto.Text = "Crear ";
+            this.btnCrearProducto.UseVisualStyleBackColor = false;
+            this.btnCrearProducto.Click += new System.EventHandler(this.btnCrearProducto_Click);
             // 
             // FrmMain
             // 
@@ -198,6 +258,7 @@ namespace ProyectoFletes.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(836, 540);
+            this.Controls.Add(this.pnlProductos);
             this.Controls.Add(this.pnlSubMenuPiloto);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -207,6 +268,7 @@ namespace ProyectoFletes.Views
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlSubMenuPiloto.ResumeLayout(false);
+            this.pnlProductos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -224,5 +286,9 @@ namespace ProyectoFletes.Views
         private System.Windows.Forms.Button btnCrearPi;
         private System.Windows.Forms.Button btnVerPilotos;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.Panel pnlProductos;
+        private System.Windows.Forms.Button btnVerProducto;
+        private System.Windows.Forms.Button btnCrearProducto;
     }
 }

@@ -11,11 +11,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoFletes.Data;
 using System.Threading;
+using System.Data.SqlClient;
 
 namespace ProyectoFletes
 {
     public partial class Form1 : Form
     {
+        
+        public  string ConexionString()
+        {
+            return @"Data Source=DESKTOP-JNDQ2L1\SQLEXPRESS;Initial Catalog=RyW;UID=" +txtUsername.Text +";PWD=" + txtPassword.Text;
+        }
+        
         Conexion con;
         FrmMain f1;
         int cont =3;
@@ -42,11 +49,12 @@ namespace ProyectoFletes
             // Aqui faltan los roles jaja
             // aqui estan cochon jajaj
             con = new Conexion(txtUsername.Text, txtPassword.Text);
+            string logon = @"Data Source=DESKTOP-JNDQ2L1\SQLEXPRESS;Initial Catalog=RyW;UID=" + txtUsername.Text + ";PWD=" + txtPassword.Text;
     
             if (this.con.connect.State == ConnectionState.Open)
             {
                 MessageBox.Show("Bienvenido al sistema!");
-                f1 = new FrmMain(con);
+                f1 = new FrmMain(con, logon);
 
                     f1.Show();
                     this.Hide();
@@ -63,6 +71,27 @@ namespace ProyectoFletes
 
                 }
             }
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        public  string getUsuario()
+        {
+            string user = txtUsername.Text;
+            return user;
+        }
+        public string getPass()
+        {
+            string pass = txtPassword.Text;
+            return pass; 
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

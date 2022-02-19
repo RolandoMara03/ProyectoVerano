@@ -13,19 +13,25 @@ namespace ProyectoFletes.Views
 {
     public partial class frmCrearProducto : Form
     {
+        string logon;
         public Conexion con;
-        public DProducto dProducto;
+        DProducto dProducto;
+        
         public frmCrearProducto()
         {
             InitializeComponent();
-            CargarClientes();
+            CargarClientes(logon);
+            CargarCategorias();
         }
 
-        public frmCrearProducto (Conexion con)
+        public frmCrearProducto (Conexion con ,string logon , DProducto dProducto)
         {
             InitializeComponent();
             this.con = con;
-            CargarClientes();
+            this.logon = logon;
+            this.dProducto = dProducto;
+            CargarClientes(logon);
+            CargarCategorias();
         }
 
         private void lblCliente_Click(object sender, EventArgs e)
@@ -43,20 +49,24 @@ namespace ProyectoFletes.Views
 
         }
 
-        private void CargarClientes()
+        private void CargarClientes(string logon)
         {
-            try
-            {
-                DProducto dProducto = new DProducto(con);
-                dProducto.CargarClientes();
-                //cmbClientes.DataSource = dProducto.CargarClientes();
-
-            }catch(Exception ex)
-            {
-
-            }
+            cmbClientes.DataSource = dProducto.CargarClientes(logon);
             cmbClientes.DisplayMember = "NombreC";
             cmbClientes.ValueMember = "NombreC";
+        }  
+
+        private void CargarCategorias()
+        {
+          cmbCategoria.DataSource = dProducto.CargarCategorias(logon);
+          cmbCategoria.DisplayMember = "NombreCat";
+          cmbCategoria.ValueMember = "NombreCat";
+        }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            string Cliente = cmbClientes.SelectedValue.ToString();
+            
         }
     }
 }

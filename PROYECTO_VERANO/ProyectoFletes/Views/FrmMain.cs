@@ -14,19 +14,22 @@ namespace ProyectoFletes.Views
     public partial class FrmMain : Form
     {
          Conexion con;
+        string logon; 
         Prueba p;
         frmCrearSucursal cs;
+        frmCrearProducto crearProducto;
         public DataTable dataEmpleado = new DataTable();
         public FrmMain()
         {
             
             InitializeComponent();
         }
-        public FrmMain(Conexion cone)
+        public FrmMain(Conexion cone , string logon)
         {
            
             InitializeComponent();
             this.con = cone;
+            this.logon = logon;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -56,6 +59,23 @@ namespace ProyectoFletes.Views
         {
             MessageBox.Show("Gracias por utilizar el sistema!");
             Application.Exit();
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            pnlProductos.Visible = true; 
+
+        }
+
+        private void btnCrearProducto_Click(object sender, EventArgs e)
+        {
+            if (con.connect.State == ConnectionState.Open)
+            {
+              
+                DProducto dProducto = new DProducto(con , logon);
+               frmCrearProducto frmCrearProducto = new frmCrearProducto(con, logon, dProducto  );
+                frmCrearProducto.Show(); 
+            }
         }
     }
 }

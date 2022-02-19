@@ -17,7 +17,7 @@ namespace ProyectoFletes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCrearProducto());
+            Application.Run(new Form1());
         }
     }
 }
