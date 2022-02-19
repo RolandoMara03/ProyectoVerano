@@ -17,7 +17,7 @@ namespace ProyectoFletes.Data
             try
             {
 
-                connect = new SqlConnection("Data Source=DESKTOP-K0VA15R\\DEVROLANDO;Initial Catalog=RyW;UID="+ user + ";PWD=" + pass);
+                connect = new SqlConnection(@"Data Source=DESKTOP-JNDQ2L1\SQLEXPRESS;Initial Catalog=RyW;UID=" + "sa" + ";PWD=" + "1234");
                 connect.Open();
             }
             catch (Exception)

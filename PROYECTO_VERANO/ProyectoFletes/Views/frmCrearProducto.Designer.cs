@@ -30,7 +30,7 @@ namespace ProyectoFletes.Views
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbClientes = new System.Windows.Forms.ComboBox();
             this.lblCliente = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCategoria = new System.Windows.Forms.Label();
@@ -55,17 +55,17 @@ namespace ProyectoFletes.Views
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Crear Producto";
             // 
-            // comboBox1
+            // cmbClientes
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 98);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(355, 27);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbClientes.BackColor = System.Drawing.SystemColors.Control;
+            this.cmbClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbClientes.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbClientes.FormattingEnabled = true;
+            this.cmbClientes.Location = new System.Drawing.Point(12, 98);
+            this.cmbClientes.Name = "cmbClientes";
+            this.cmbClientes.Size = new System.Drawing.Size(355, 27);
+            this.cmbClientes.TabIndex = 1;
+            this.cmbClientes.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lblCliente
             // 
@@ -201,7 +201,7 @@ namespace ProyectoFletes.Views
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblCliente);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbClientes);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCrearProducto";
@@ -215,7 +215,7 @@ namespace ProyectoFletes.Views
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbClientes;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblCategoria;

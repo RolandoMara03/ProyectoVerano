@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Conexion.cs" />
+    <Compile Include="Data\DProducto.cs" />
     <Compile Include="Views\fmCrearContrato.cs">
       <SubType>Form</SubType>
     </Compile>
