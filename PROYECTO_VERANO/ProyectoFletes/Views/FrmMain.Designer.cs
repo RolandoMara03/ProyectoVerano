@@ -1,0 +1,228 @@
+﻿
+namespace ProyectoFletes.Views
+{
+    partial class FrmMain
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnCamiones = new System.Windows.Forms.Button();
+            this.btnDestinos = new System.Windows.Forms.Button();
+            this.btnViajes = new System.Windows.Forms.Button();
+            this.btnPilotos = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlSubMenuPiloto = new System.Windows.Forms.Panel();
+            this.btnVerPilotos = new System.Windows.Forms.Button();
+            this.btnCrearPi = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlSubMenuPiloto.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Controls.Add(this.btnUsuarios);
+            this.panel1.Controls.Add(this.btnCamiones);
+            this.panel1.Controls.Add(this.btnDestinos);
+            this.panel1.Controls.Add(this.btnViajes);
+            this.panel1.Controls.Add(this.btnPilotos);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(216, 540);
+            this.panel1.TabIndex = 0;
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.Location = new System.Drawing.Point(12, 382);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(179, 40);
+            this.btnUsuarios.TabIndex = 5;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnCamiones
+            // 
+            this.btnCamiones.FlatAppearance.BorderSize = 0;
+            this.btnCamiones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCamiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCamiones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCamiones.Location = new System.Drawing.Point(12, 316);
+            this.btnCamiones.Name = "btnCamiones";
+            this.btnCamiones.Size = new System.Drawing.Size(179, 40);
+            this.btnCamiones.TabIndex = 4;
+            this.btnCamiones.Text = "Camiones ";
+            this.btnCamiones.UseVisualStyleBackColor = true;
+            // 
+            // btnDestinos
+            // 
+            this.btnDestinos.FlatAppearance.BorderSize = 0;
+            this.btnDestinos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDestinos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDestinos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDestinos.Location = new System.Drawing.Point(12, 254);
+            this.btnDestinos.Name = "btnDestinos";
+            this.btnDestinos.Size = new System.Drawing.Size(179, 40);
+            this.btnDestinos.TabIndex = 3;
+            this.btnDestinos.Text = "Destinos";
+            this.btnDestinos.UseVisualStyleBackColor = true;
+            // 
+            // btnViajes
+            // 
+            this.btnViajes.FlatAppearance.BorderSize = 0;
+            this.btnViajes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnViajes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViajes.Location = new System.Drawing.Point(12, 192);
+            this.btnViajes.Name = "btnViajes";
+            this.btnViajes.Size = new System.Drawing.Size(179, 40);
+            this.btnViajes.TabIndex = 2;
+            this.btnViajes.Text = "Viajes";
+            this.btnViajes.UseVisualStyleBackColor = true;
+            // 
+            // btnPilotos
+            // 
+            this.btnPilotos.FlatAppearance.BorderSize = 0;
+            this.btnPilotos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnPilotos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPilotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPilotos.Location = new System.Drawing.Point(12, 127);
+            this.btnPilotos.Name = "btnPilotos";
+            this.btnPilotos.Size = new System.Drawing.Size(179, 40);
+            this.btnPilotos.TabIndex = 1;
+            this.btnPilotos.Text = "Pilotos";
+            this.btnPilotos.UseVisualStyleBackColor = true;
+            this.btnPilotos.Click += new System.EventHandler(this.btnPilotos_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoFletes.Properties.Resources.imageonline_co_transparentimage;
+            this.pictureBox1.Location = new System.Drawing.Point(3, -97);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 354);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pnlSubMenuPiloto
+            // 
+            this.pnlSubMenuPiloto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.pnlSubMenuPiloto.Controls.Add(this.btnVerPilotos);
+            this.pnlSubMenuPiloto.Controls.Add(this.btnCrearPi);
+            this.pnlSubMenuPiloto.Location = new System.Drawing.Point(214, 112);
+            this.pnlSubMenuPiloto.Name = "pnlSubMenuPiloto";
+            this.pnlSubMenuPiloto.Size = new System.Drawing.Size(182, 55);
+            this.pnlSubMenuPiloto.TabIndex = 1;
+            this.pnlSubMenuPiloto.Visible = false;
+            // 
+            // btnVerPilotos
+            // 
+            this.btnVerPilotos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnVerPilotos.FlatAppearance.BorderSize = 0;
+            this.btnVerPilotos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnVerPilotos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerPilotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerPilotos.Location = new System.Drawing.Point(0, 25);
+            this.btnVerPilotos.Name = "btnVerPilotos";
+            this.btnVerPilotos.Size = new System.Drawing.Size(179, 30);
+            this.btnVerPilotos.TabIndex = 7;
+            this.btnVerPilotos.Text = "Ver";
+            this.btnVerPilotos.UseVisualStyleBackColor = false;
+            this.btnVerPilotos.Click += new System.EventHandler(this.btnVerPilotos_Click);
+            // 
+            // btnCrearPi
+            // 
+            this.btnCrearPi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnCrearPi.FlatAppearance.BorderSize = 0;
+            this.btnCrearPi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCrearPi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearPi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearPi.Location = new System.Drawing.Point(0, 0);
+            this.btnCrearPi.Name = "btnCrearPi";
+            this.btnCrearPi.Size = new System.Drawing.Size(179, 30);
+            this.btnCrearPi.TabIndex = 6;
+            this.btnCrearPi.Text = "Crear ";
+            this.btnCrearPi.UseVisualStyleBackColor = false;
+            this.btnCrearPi.Click += new System.EventHandler(this.btnCrearPi_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(12, 428);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(179, 40);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // FrmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(836, 540);
+            this.Controls.Add(this.pnlSubMenuPiloto);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmMain";
+            this.Text = "FrmMain";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlSubMenuPiloto.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnCamiones;
+        private System.Windows.Forms.Button btnDestinos;
+        private System.Windows.Forms.Button btnViajes;
+        private System.Windows.Forms.Button btnPilotos;
+        private System.Windows.Forms.Panel pnlSubMenuPiloto;
+        private System.Windows.Forms.Button btnCrearPi;
+        private System.Windows.Forms.Button btnVerPilotos;
+        private System.Windows.Forms.Button btnSalir;
+    }
+}
