@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\PROYECTO_VERANO"
+    "\\PROYECTO_VERANO",
+    "\\PROYECTO_VERANO\\ProyectoFletes",
+    "\\PROYECTO_VERANO\\ProyectoFletes\\Views"
   ],
-  "SelectedNode": "\\PROYECTO_VERANO\\ProyectoFletes.sln",
+  "SelectedNode": "\\PROYECTO_VERANO\\ProyectoFletes\\Views\\frmCrearSucursal.cs",
   "PreviewInSolutionExplorer": false
 }

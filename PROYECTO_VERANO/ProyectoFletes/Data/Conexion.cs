@@ -26,6 +26,12 @@ namespace ProyectoFletes.Data
 
             }
         }
+
+        public void AbrirConexion()
+        {
+            connect.Close();
+            connect.Open();
+        }
         //MAE AQUI PUSE LAS ONDAS DE SUCURSAL
         //PARA CARGAR DEPARTAMENTOS 
         public DataTable CargarComa(int index)

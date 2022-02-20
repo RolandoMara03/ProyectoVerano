@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -66,7 +67,22 @@ namespace ProyectoFletes.Views
         private void btnCrear_Click(object sender, EventArgs e)
         {
             string Cliente = cmbClientes.SelectedValue.ToString();
-            
+            SqlConnection connect = new SqlConnection(logon);
+            connect.Open();
+            string query = "Select RUC from Cliente where NombreC = '"+Cliente +"'";
+            SqlCommand command = new SqlCommand(query , connect);
+            string IdCliente = Convert.ToString(command.ExecuteScalar());
+            string Categoria = cmbCategoria.SelectedValue.ToString();
+            string query2 = "Select id_Cat from Categoria where NombreCat = '"+Categoria +"'";
+            int IdCategoria = Convert.ToInt32(command.ExecuteScalar());
+            string NombreProducto = txtNombreProducto.Text;
+            string Descripcion = txtDescripcion.Text;
+            //Validar aqui 
+
+            dProducto.InsertarProducto(logon,IdCliente,IdCategoria,NombreProducto,Descripcion , connect);
+
+
+
         }
     }
 }

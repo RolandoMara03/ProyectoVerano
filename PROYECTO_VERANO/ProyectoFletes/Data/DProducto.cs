@@ -72,6 +72,39 @@ namespace ProyectoFletes.Data
             return dt;
         }
 
+        public void InsertarProducto (string logon , string idCliente, int idCategoria , string Nombre , string Descripcion , SqlConnection connect)
+        {
+            string rpta = ""; 
+            try
+            {
+                Console.WriteLine("hacemos parametros");
+              
+                SqlCommand cmd = new SqlCommand();
+                SqlParameter[] param = new SqlParameter[4];
+                param[0] = new SqlParameter("@IdCliente" , SqlDbType.Char);
+                param[0].Value = idCliente;
+                param[1] = new SqlParameter("@IdCategoria", SqlDbType.Int);
+                param[1].Value = idCategoria;
+                param[2] = new SqlParameter("@Nombre" , SqlDbType.NVarChar);
+                param[2].Value = Nombre;
+                param[3] = new SqlParameter("@Descripcion", SqlDbType.NVarChar);
+                param[3].Value = Descripcion;
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "InsertarProducto";
+                cmd.Connection = connect;
+                Console.WriteLine("pasamos parametros");
+                cmd.Parameters.AddRange(param);
+
+                rpta = cmd.ExecuteNonQuery() == 1 ? "Ok" : "Not ok"; 
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
     }
    
 }

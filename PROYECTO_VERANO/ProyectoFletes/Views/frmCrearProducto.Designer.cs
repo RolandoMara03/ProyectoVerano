@@ -190,13 +190,13 @@ namespace ProyectoFletes.Views
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 370);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtNombreProducto);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lblNombrePro);
-            this.Controls.Add(this.txtNombreProducto);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.lblCategoria);
