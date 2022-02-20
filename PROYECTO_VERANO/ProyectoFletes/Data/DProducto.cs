@@ -28,7 +28,7 @@ namespace ProyectoFletes.Data
         {
 
            SqlConnection connect = new SqlConnection(logon);
-            Console.WriteLine("imprimimos cone" + logon);
+            Console.WriteLine("imprimimos cone" + logon); // de
             Console.WriteLine(connect);
             if (con.connect.State == ConnectionState.Open)
             {
